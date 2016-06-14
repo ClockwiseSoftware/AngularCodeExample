@@ -1,0 +1,17 @@
+<nav>
+    <br>
+    <ul class="pagination">
+        <li style="cursor: pointer;">
+            <a ng-click="prevWeek()">
+                <span aria-hidden="true">&lsaquo;</span>
+            </a>
+        </li>
+        <li><a> Semaine {{currentWeekNum}}</a></li>
+        <li style="cursor: pointer;" ng-class="{disabled:nextWeekDisabled}">
+            <a ng-click="nextWeek()">
+                <span aria-hidden="true">&rsaquo;</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+
